@@ -1,6 +1,7 @@
 #Dissertation: Improving Access to Care and Provider Continuity at USAF and US Army Military Treatment Facilities
-Purpose: This repository contains the R code to my dissertation on Air Force and Army primary care scheduling improvements
-Directions: When downloaded together into a single directory, the simulation will be able to run all files to provide output when data is provided to the simulation
+**Purpose:** This repository contains the R code to my dissertation on Air Force and Army primary care scheduling improvements
+
+**Directions:** When downloaded together into a single directory, the simulation will be able to run all files to provide output when data is provided to the simulation
 
 ##Background
 
