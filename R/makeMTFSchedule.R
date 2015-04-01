@@ -28,6 +28,13 @@ makeMTFSchedule <- function(days=100, teams=1, provPerTeam=1, act=0, routine=0, 
             routine <- c(rep(routine,provPerTeam))
             well <- c(rep(well,provPerTeam))
             Team <- cbind(acute, routine, well)
+            for(i in 1:provPerTeam) {
+                  available <- sample(0:1,1,prob=c(1-avail,avail))
+                  acute[i] <- acute[i]*available
+                  routine[i] <- routine[i]*available
+                  well[i] <- well[i]*available
+            }
+            Team <- cbind(acute, routine, well)
       }
       
       #Create a full day to add to the schedule

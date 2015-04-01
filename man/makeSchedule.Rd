@@ -5,7 +5,7 @@
 \title{makeSchedule Function}
 \usage{
 makeSchedule(days = 100, teams = 1, provPerTeam = 1, act = 0,
-  nonact = 0, avail = 1)
+  nonact = 0, avail = 1, seed = 5)
 }
 \arguments{
 \item{days}{defines the number of days in the schedule. Defaults to 100 days}

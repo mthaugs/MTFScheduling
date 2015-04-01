@@ -17,12 +17,18 @@
 #of provider teams and each provider team is populated with a matrix of providers
 #and the number of available appointments.
 #Schedule[[day]][[Team]][Provider][ApptType]
-makeSchedule <- function(days=100, teams=1, provPerTeam=1, act=0, nonact=0, avail=1) {
+makeSchedule <- function(days=100, teams=1, provPerTeam=1, act=0, nonact=0, avail=1, seed=5) {
       
       #Create a matrix that represents a provider team
       createTeam <- function(act,nonact) {
+            #set.seed <- seed 
             acute <- c(rep(act,provPerTeam))
             nonacute <- c(rep(nonact,provPerTeam))
+            for(i in 1:provPerTeam) {
+                  available <- sample(0:1,1,prob=c(1-avail,avail))
+                  acute[i] <- acute[i]*available
+                  nonacute[i] <- nonacute[i]*available
+            }
             Team <- cbind(acute, nonacute)
       }
       
