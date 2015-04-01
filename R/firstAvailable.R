@@ -49,12 +49,6 @@ firstAvailable <- function(schedule,patient,Day,crossbook=TRUE) {
       #return the last schedule day in the schedule that meets the access std
       accessStandard = day+Horizon
       
-      #points to the correct schedule provider column for acute or non-acute
-#       if(type=="acute") {
-#             col <- 1
-#       } else if(type=="routine"||type=="well") {
-#             col <- 2
-#       } else { message("error in appt type provided for schedule col")}
       
       #iterates until appt is booked w/ scheduled provider or out of access std
       while(booked!=TRUE) {

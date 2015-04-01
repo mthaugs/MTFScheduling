@@ -16,6 +16,6 @@ PatientGeneration <- function(lambda,teams,provPerTeam,apptRatio,seed=5) {
       set.seed(seed)
       apptTypes <- names(apptRatio)
       PatientList <- vector("list",rpois(1,lambda))
-      PatientList<- lapply (1 : length(PatientList), function(x) patient(sample(apptTypes,size=1,prob=apptRatio),sample(provPerTeam,1),teams(numteams,1)))
+      PatientList<- lapply (1 : length(PatientList), function(x) patient(sample(apptTypes,size=1,prob=apptRatio),sample(provPerTeam,1),sample(teams,1)))
       PatientList
 }
