@@ -2,6 +2,7 @@
 
 export(MTFScheduling)
 export(PatientGeneration)
+export(callPatientList)
 export(evenFill)
 export(firstAvailable)
 export(firstAvailableAcute)
