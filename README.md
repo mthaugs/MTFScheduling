@@ -4,7 +4,7 @@
 
 **Directions:** When downloaded together into a single directory, the simulation will be able to run all files to provide output when data is provided to the simulation
 
-To load the MTFScheduling package quickly, use the following code:
+To load the ```MTFScheduling``` package quickly, use the following code:
 
 <!-- -->
 
@@ -12,7 +12,7 @@ To load the MTFScheduling package quickly, use the following code:
     library("devtools")
     devtools::install_github("mthaugs/MTFScheduling")
 
-This will directly install the MTFScheduling package into your R library and allow you to use the code.
+This will directly install the ```MTFScheduling``` package into your R library and allow you to use the code.
 
 **Contributions:** If my code interests you, please feel free to fork and improve. I appreciate any suggestions that improve the efficiency of the code and general comments regarding syntax or readability. Thank you!
 
